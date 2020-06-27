@@ -89,8 +89,8 @@ export default {
 <style scoped>
   .calculator {
     margin: 0 auto;
-    width: 500px;
-    font-size: 40px;
+    width: 400px;
+    font-size: 35px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: minmax(50px, auto);
@@ -102,17 +102,29 @@ export default {
     color: white;
   }
 
+  .name {
+    grid-column: 1 / 5;
+    color: white;
+    background-color: rgba(64, 64, 64, 0.21);
+    border: 1px solid #999;
+  }
+
   .zero {
     grid-column: 1 / 3;
   }
 
   .btn {
-    background-color: #F2F2F2;
+    color: black;
+    background-color: rgba(64, 64, 64, 0.21);
     border: 1px solid #999;
   }
 
   .operator {
     color: white;
     background-color: orange;
+  }
+
+  div {
+    cursor: pointer;
   }
 </style>
